@@ -24,6 +24,21 @@ A modern, interactive tree visualizer for managing hierarchical relationships am
 - **[nanoid](https://github.com/ai/nanoid)** - Unique ID generator
 - **[clsx](https://github.com/lukeed/clsx)** - Conditional className utility
 
+
+## 📦 Implementation Reference
+
+1. <img width="1911" height="863" alt="image" src="https://github.com/user-attachments/assets/2bcb62fe-ea93-46e2-91ea-730d5349853b" />
+
+2. <img width="1916" height="863" alt="image" src="https://github.com/user-attachments/assets/3debccf4-ba5f-4916-984e-1659676503f7" />
+
+3. <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/0941ac60-0093-4e44-8868-a95bbd5179d5" />
+
+4. <img width="1917" height="862" alt="image" src="https://github.com/user-attachments/assets/c1c8d167-24a1-4a63-b5a3-5e9dc9825738" />
+
+
+
+
+
 ## 🏗️ Tree Structure (Data Model)
 
 ### Core Data Model
