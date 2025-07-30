@@ -75,7 +75,8 @@ type NodeType = 'account' | 'loan' | 'collateral'
 
 ### Example Tree Structures
 
-\`\`\`
+```plaintext
+
 Account (ACC_abc123)
 ├── Loan (LOAN_def456)
 │   ├── Collateral (COL_ghi789)
@@ -87,7 +88,9 @@ Account (ACC_abc123)
 Loan (LOAN_xyz789)
 ├── Collateral (COL_abc123)
 └── Collateral (COL_def456)
-\`\`\`
+
+```
+
 
 ## 🎨 Node Types Definition & Rendering
 
