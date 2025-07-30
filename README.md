@@ -95,10 +95,9 @@ Loan (LOAN_xyz789)
 
 All nodes inherit from a reusable \`BaseNode\` component that provides consistent styling and behavior:
 
+## 🧩 Core Data Model
+
 ```plaintext
-
-TypeScript 
-
 interface TreeNode {
   id: string           // Unique identifier (nanoid generated)
   type: NodeType       // 'account' | 'loan' | 'collateral'
@@ -109,20 +108,18 @@ interface TreeNode {
 
 type NodeType = 'account' | 'loan' | 'collateral'
 
-
 interface NodeConfig {
   icon: LucideIcon           // Primary icon
   secondaryIcon: LucideIcon  // Badge icon
   colors: {
     gradient: string         // Background gradient
-    border: string          // Border color
-    iconBg: string          // Icon background
+    border: string           // Border color
+    iconBg: string           // Icon background
     secondaryIcon: string   // Secondary icon color
     badge: string           // Badge text color
   }
 }
-
-
+```
 
 
 ### Node Type Configurations
