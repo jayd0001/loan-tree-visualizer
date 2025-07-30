@@ -361,9 +361,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -376,113 +373,82 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Project Folder Structure**
+App.tsx
+index.css
+main.tsx
+components/
+├── Badge/
+│ ├── Badge.tsx
+│ ├── config/
+│ │ └── index.ts
+│ └── types/
+│ └── index.ts
+├── Button/
+│ ├── Button.tsx
+│ ├── config/
+│ │ └── index.ts
+│ └── types/
+│ └── index.ts
+├── Card/
+│ ├── Card.tsx
+│ └── _components/
+│ ├── CardContent/
+│ │ └── CardContent.tsx
+│ ├── CardDescription/
+│ │ └── CardDescription.tsx
+│ ├── CardFooter/
+│ │ └── CardFooter.tsx
+│ ├── CardHeader/
+│ │ └── CardHeader.tsx
+│ └── CardTitle/
+│ └── CardTitle.tsx
+├── Header/
+│ ├── Header.tsx
+│ ├── _components/
+│ │ ├── AddRootDropdown/
+│ │ │ └── AddRootDropdown.tsx
+│ │ ├── ExportButton/
+│ │ │ └── ExportButton.tsx
+│ │ ├── TitleSection/
+│ │ │ └── TitleSection.tsx
+│ │ └── ViewToggleButton/
+│ │ └── ViewToggleButton.tsx
+│ └── _hooks/
+│ └── index.ts
+├── Nodes/
+│ ├── config/
+│ │ └── node-configs.ts
+│ └── _components/
+│ ├── AccountNode/
+│ │ └── AccountNode.tsx
+│ ├── BaseNode/
+│ │ └── BaseNode.tsx
+│ ├── CollateralNode/
+│ │ └── CollateralNode.tsx
+│ └── LoanNode/
+│ └── LoanNode.tsx
+├── Separator/
+│ └── Separator.tsx
+├── SidePanel/
+│ └── SidePanel.tsx
+├── TreeStructureViewer/
+│ ├── TreeStructureViewer.tsx
+│ ├── types/
+│ │ └── index.ts
+│ └── _components/
+│ └── TreeNodeItem/
+│ └── TreeNodeItem.tsx
+└── TreeVisualizer/
+├── TreeVisualizer.tsx
+├── config/
+│ └── index.ts
+└── _components/
+└── FlowComponent/
+└── FlowComponent.tsx
+contexts/
+└── tree-context.tsx
+lib/
+└── utils.ts
 
-|   App.tsx
-|   index.css
-|   main.tsx
-|   
-+---components
-|   +---Badge
-|   |   |   Badge.tsx
-|   |   |   
-|   |   +---config
-|   |   |       index.ts
-|   |   |       
-|   |   \---types
-|   |           index.ts
-|   |           
-|   +---Button
-|   |   |   Button.tsx
-|   |   |   
-|   |   +---config
-|   |   |       index.ts
-|   |   |       
-|   |   \---types
-|   |           index.ts
-|   |           
-|   +---Card
-|   |   |   Card.tsx
-|   |   |   
-|   |   \---_components
-|   |       +---CardContent
-|   |       |       CardContent.tsx
-|   |       |       
-|   |       +---CardDescription
-|   |       |       CardDescription.tsx
-|   |       |       
-|   |       +---CardFooter
-|   |       |       CardFooter.tsx
-|   |       |       
-|   |       +---CardHeader
-|   |       |       CardHeader.tsx
-|   |       |       
-|   |       \---CardTitle
-|   |               CardTitle.tsx
-|   |               
-|   +---Header
-|   |   |   Header.tsx
-|   |   |   
-|   |   +---_components
-|   |   |   +---AddRootDropdown
-|   |   |   |       AddRootDropdown.tsx
-|   |   |   |       
-|   |   |   +---ExportButton
-|   |   |   +---TitleSection
-|   |   |   |       ExportButton.tsx
-|   |   |   |       TitleSection.tsx
-|   |   |   |       
-|   |   |   \---ViewToggleButton
-|   |   |           ViewToggleButton.tsx
-|   |   |           
-|   |   \---_hooks
-|   |           index.ts
-|   |           
-|   +---Nodes
-|   |   +---config
-|   |   |       node-configs.ts
-|   |   |       
-|   |   \---_components
-|   |       +---AccountNode
-|   |       |       AccountNode.tsx
-|   |       |       
-|   |       +---BaseNode
-|   |       |       BaseNode.tsx
-|   |       |       
-|   |       +---CollateralNode
-|   |       |       CollateralNode.tsx
-|   |       |       
-|   |       \---LoanNode
-|   |               LoanNode.tsx
-|   |               
-|   +---Separator
-|   |       Separator.tsx
-|   |       
-|   +---SidePanel
-|   |       SidePanel.tsx
-|   |       
-|   +---TreeStructureViewer
-|   |   |   TreeStructureViewer.tsx
-|   |   |   
-|   |   +---types
-|   |   |       index.ts
-|   |   |       
-|   |   \---_components
-|   |       \---TreeNodeItem
-|   |               TreeNodeItem.tsx
-|   |               
-|   \---TreeVisualizer
-|       |   TreeVisualizer.tsx
-|       |   
-|       +---config
-|       |       index.ts
-|       |       
-|       \---_components
-|           \---FlowComponent
-|                   FlowComponent.tsx
-|                   
-+---contexts
-|       tree-context.tsx
-|       
-\---lib
-        utils.ts
-        
+
+
