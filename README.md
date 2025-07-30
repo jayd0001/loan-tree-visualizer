@@ -41,9 +41,9 @@ A modern, interactive tree visualizer for managing hierarchical relationships am
 
 ## 🏗️ Tree Structure (Data Model)
 
-### Core Data Model
+## 🧩 Core Data Model
 
-\`\`\`typescript
+```plaintext
 interface TreeNode {
   id: string           // Unique identifier (nanoid generated)
   type: NodeType       // 'account' | 'loan' | 'collateral'
@@ -53,7 +53,20 @@ interface TreeNode {
 }
 
 type NodeType = 'account' | 'loan' | 'collateral'
-\`\`\`
+
+interface NodeConfig {
+  icon: LucideIcon           // Primary icon
+  secondaryIcon: LucideIcon  // Badge icon
+  colors: {
+    gradient: string         // Background gradient
+    border: string           // Border color
+    iconBg: string           // Icon background
+    secondaryIcon: string   // Secondary icon color
+    badge: string           // Badge text color
+  }
+}
+```
+
 
 ### Hierarchical Relationship Rules
 
@@ -98,31 +111,7 @@ Loan (LOAN_xyz789)
 
 All nodes inherit from a reusable \`BaseNode\` component that provides consistent styling and behavior:
 
-## 🧩 Core Data Model
 
-```plaintext
-interface TreeNode {
-  id: string           // Unique identifier (nanoid generated)
-  type: NodeType       // 'account' | 'loan' | 'collateral'
-  label: string        // Display name (auto-generated)
-  parentId?: string    // Parent node ID (undefined for root nodes)
-  createdAt: Date      // Creation timestamp
-}
-
-type NodeType = 'account' | 'loan' | 'collateral'
-
-interface NodeConfig {
-  icon: LucideIcon           // Primary icon
-  secondaryIcon: LucideIcon  // Badge icon
-  colors: {
-    gradient: string         // Background gradient
-    border: string           // Border color
-    iconBg: string           // Icon background
-    secondaryIcon: string   // Secondary icon color
-    badge: string           // Badge text color
-  }
-}
-```
 
 
 ### Node Type Configurations
@@ -316,7 +305,7 @@ interface NodeConfig {
    \`\`\`
 
 4. **Open in browser**:
-   Navigate to \`http://localhost:5173\`
+   Navigate to \`http://localhost:5173`
 
 ### Build for Production
 
@@ -371,9 +360,6 @@ npm start
 - **Accessibility**: Enhanced screen reader support
 - **Internationalization**: Multi-language support
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ### Development Setup
 1. Fork the repository
