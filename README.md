@@ -370,33 +370,87 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 - **Radix UI** - Accessible component primitives
 - **Dagre** - Graph layout algorithms
 
+---
 ## 📁 Project Structure
 
 ```plaintext
-loan-tree-visualizer/
-├── public/                        # Static assets
-├── src/
-│   ├── api/                      # API calls and endpoints
-│   ├── assets/                   # Images, fonts, and other static assets
-│   ├── components/
-│   │   ├── Button/              # Reusable Button component
-│   │   ├── Badge/               # Badge UI component
-│   │   ├── Card/                # Card layout component
-│   │   └── Nodes/
-│   │       ├── InputNode/       # Custom Input Node
-│   │       ├── OutputNode/      # Custom Output Node
-│   │       ├── TextNode/        # Text-based Node
-│   │       └── AccountNode/     # Node representing loan/account
-│   ├── contexts/                # React Context providers
-│   ├── hooks/                   # Custom React Hooks
-│   ├── pages/
-│   │   └── Dashboard/           # Main Dashboard page
-│   ├── routes/                  # React Router configs
-│   ├── services/                # Service layer (e.g., API logic)
-│   ├── utils/                   # Helper functions
-│   ├── App.jsx                  # Root app component
-│   └── main.jsx                 # App entry point
-├── package.json                 # Project dependencies and scripts
-├── README.md                    # Project documentation
-└── vite.config.js               # Vite config
+.
+├── App.tsx
+├── index.css
+├── main.tsx
+├── components/
+│   ├── Badge/
+│   │   ├── Badge.tsx
+│   │   ├── config/
+│   │   │   └── index.ts
+│   │   └── types/
+│   │       └── index.ts
+│   ├── Button/
+│   │   ├── Button.tsx
+│   │   ├── config/
+│   │   │   └── index.ts
+│   │   └── types/
+│   │       └── index.ts
+│   ├── Card/
+│   │   ├── Card.tsx
+│   │   └── _components/
+│   │       ├── CardContent/
+│   │       │   └── CardContent.tsx
+│   │       ├── CardDescription/
+│   │       │   └── CardDescription.tsx
+│   │       ├── CardFooter/
+│   │       │   └── CardFooter.tsx
+│   │       ├── CardHeader/
+│   │       │   └── CardHeader.tsx
+│   │       └── CardTitle/
+│   │           └── CardTitle.tsx
+│   ├── Header/
+│   │   ├── Header.tsx
+│   │   ├── _components/
+│   │   │   ├── AddRootDropdown/
+│   │   │   │   └── AddRootDropdown.tsx
+│   │   │   ├── ExportButton/
+│   │   │   │   └── ExportButton.tsx
+│   │   │   ├── TitleSection/
+│   │   │   │   └── TitleSection.tsx
+│   │   │   └── ViewToggleButton/
+│   │   │       └── ViewToggleButton.tsx
+│   │   └── _hooks/
+│   │       └── index.ts
+│   ├── Nodes/
+│   │   ├── config/
+│   │   │   └── node-configs.ts
+│   │   └── _components/
+│   │       ├── AccountNode/
+│   │       │   └── AccountNode.tsx
+│   │       ├── BaseNode/
+│   │       │   └── BaseNode.tsx
+│   │       ├── CollateralNode/
+│   │       │   └── CollateralNode.tsx
+│   │       └── LoanNode/
+│   │           └── LoanNode.tsx
+│   ├── Separator/
+│   │   └── Separator.tsx
+│   ├── SidePanel/
+│   │   └── SidePanel.tsx
+│   ├── TreeStructureViewer/
+│   │   ├── TreeStructureViewer.tsx
+│   │   ├── types/
+│   │   │   └── index.ts
+│   │   └── _components/
+│   │       └── TreeNodeItem/
+│   │           └── TreeNodeItem.tsx
+│   └── TreeVisualizer/
+│       ├── TreeVisualizer.tsx
+│       ├── config/
+│       │   └── index.ts
+│       └── _components/
+│           └── FlowComponent/
+│               └── FlowComponent.tsx
+├── contexts/
+│   └── tree-context.tsx
+└── lib/
+    └── utils.ts
+
+
 
