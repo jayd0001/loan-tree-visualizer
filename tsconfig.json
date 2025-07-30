@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Modern JavaScript
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Enable web APIs and modern features
+    "allowJs": true, // Allow JS files (optional during transition)
+    "skipLibCheck": true, // Faster builds
+    "esModuleInterop": true, // CommonJS module compatibility
+    "allowSyntheticDefaultImports": true, // Support default imports from modules without them
+    "strict": true, // Enable strict type-checking
+    "forceConsistentCasingInFileNames": true, // Case-sensitive file paths
+    "module": "ESNext", // Modern module system
+    "moduleResolution": "Node", // Use Node-style resolution
+    "resolveJsonModule": true, // Import `.json` files
+    "isolatedModules": true, // Required for React's JSX transform
+    "noEmit": true, // Don’t output compiled files (used with bundlers like Vite/CRA)
+    "jsx": "react-jsx" // Use the new JSX transform (React 17+)
+  },
+  "include": ["src"], // Compile everything in src/
+  "exclude": ["node_modules", "build"] // Exclude these folders
+}
