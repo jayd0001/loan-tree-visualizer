@@ -80,16 +80,20 @@ Loan (LOAN_xyz789)
 
 All nodes inherit from a reusable \`BaseNode\` component that provides consistent styling and behavior:
 
-\`\`\`typescript
-interface BaseNodeProps {
-  data: {
-    id: string
-    label: string
-    type: NodeType
-    onSelect: () => void
-  }
-  config: NodeConfig
+```plaintext
+
+TypeScript 
+
+interface TreeNode {
+  id: string           // Unique identifier (nanoid generated)
+  type: NodeType       // 'account' | 'loan' | 'collateral'
+  label: string        // Display name (auto-generated)
+  parentId?: string    // Parent node ID (undefined for root nodes)
+  createdAt: Date      // Creation timestamp
 }
+
+type NodeType = 'account' | 'loan' | 'collateral'
+
 
 interface NodeConfig {
   icon: LucideIcon           // Primary icon
@@ -102,7 +106,9 @@ interface NodeConfig {
     badge: string           // Badge text color
   }
 }
-\`\`\`
+
+
+
 
 ### Node Type Configurations
 
